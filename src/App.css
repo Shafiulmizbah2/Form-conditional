@@ -1,38 +1,107 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html{
+  font-size: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body{
+  font-family: 'Roboto' , sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  background-color: rgb(245, 245, 245);
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container{
+  max-width: 1170px;
+  margin: 0 auto;
+  margin-top: 5vh;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
+}
+
+.sub-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.Person{
+  padding: 1.5rem;
+  width: 40rem;
+  box-shadow: 0rem 1rem 2rem rgba(0, 0, 0, 0.132);
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2rem;
+}
+.heading{
+  font-size: 2rem;
+  font-weight: 400;
+  color: rgb(148, 148, 148);
+  text-transform: capitalize;
+}
+
+.lead{
+  color: rgba(3, 97, 77, 0.333);
+  font-weight: 400;
+}
+
+.form{
+  margin-bottom: 5vh;
+  width: 40rem;
+  box-shadow: 0rem 1rem 2rem rgba(0, 0, 0, 0.132);
+  padding: 3vh 1rem;
+  border-radius: 1.5rem;
+  color: rgb(148, 148, 148);
+  font-family: inherit;
+  font-size: inherit;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
+  
 }
 
-.App-link {
-  color: #61dafb;
+.form-control{
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.form-control .label{
+  font-size: 2rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form-control .inp{
+  width: 80%;
+  padding: 1rem 1.5rem;
+  border: none;
+  outline: none;
+  background-color: rgba(153, 153, 153, 0.171);
+  color: rgb(88, 87, 87);
+  font-weight: 500;
+  font-size: 1.6rem;
+}
+
+.btn{
+  padding: 1rem 2rem;
+  outline: none;
+  border: none;
+  border-radius: 100px;
+  background-color: rgb(57, 182, 176);
+  color: #fff;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 1.7rem;
+  cursor: pointer;
+  margin-top: 2vh;
 }
